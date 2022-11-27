@@ -13,7 +13,7 @@
 
 body {
     background-image: url("../images/ngonghills.jpg") ;
-    background-color: rgba(38, 125, 38, 0.296);
+    background-color: rgba(0, 0, 0, 0.485);
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-size: cover;
@@ -104,6 +104,19 @@ h2, h3 {
     color: rgb(208, 203, 52) ;
     letter-spacing: .14em;
 }
+.irua {
+    display: block;
+}
+
+.iruaimg > iframe {
+    margin-left: 10%;
+    width:80%; 
+    height:60vh;
+}
+
+.irua p {
+    margin-bottom: 2%;
+}
 
 .requirements ul {
     margin-left: 5%;
@@ -126,6 +139,20 @@ h2, h3 {
  }
 
 .contacts p {
+    margin: 2% ;
+}
+
+.contacts span {
+    font-size: 120%;
+    margin: 2%;
+    padding: 1%;
+}
+
+.contacts span b {
+    color: rgb(0, 0, 0);
+    font-size: 120%;
+    background-color: rgb(193, 154, 106);
+    padding: 1%;
     margin: 2%;
 }
 
@@ -203,7 +230,9 @@ footer img {
     .mobile-nav-toggle[aria-expanded='true'] {
         background-image: url("../icons/icon-close.svg");
     }
-
+    .iruaimg > iframe {
+        margin-left: 0;
+    }
     .payments{
         display: flex;
         flex-direction: column;
