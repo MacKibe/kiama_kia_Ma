@@ -122,6 +122,17 @@ h2, h3 {
     margin-left: 5%;
 }
 
+.photocontainer {
+    border: 2px solid white;
+    width: 90%;
+    margin: 2% auto;
+    padding: 2%;
+    display: flex;
+    overflow-x: scroll;
+    gap: 2%;
+    background-color: aliceblue;
+}
+
 .payments{
     display: flex;
     justify-content: space-between;
@@ -166,7 +177,6 @@ footer img {
     width: 5%;
     height: 1%;
 }
-
 
 @media (max-width: 768px){
     body {
