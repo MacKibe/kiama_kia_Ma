@@ -70,10 +70,6 @@ nav {
     height: 20%;
 }
 
-button {
-    padding: 1% 2%;
-}
-
 hr {
     color: aliceblue;
 }
@@ -104,6 +100,20 @@ h2, h3 {
     color: rgb(208, 203, 52) ;
     letter-spacing: .14em;
 }
+.requirements ul {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    flex-wrap: wrap;
+
+}
+.location iframe {
+    width: 100%;
+    margin: 0 auto;
+    height: 80vh;
+    box-shadow: #fff;
+}
+
 .irua {
     display: block;
 }
@@ -126,11 +136,10 @@ h2, h3 {
     border: 2px solid white;
     width: 90%;
     margin: 2% auto;
-    padding: 2%;
     display: flex;
-    overflow-x: scroll;
-    gap: 2%;
-    background-color: aliceblue;
+    overflow-x:scroll;
+    gap: 5%;
+    background-color: rgba(35, 60, 82, 0.579);
 }
 
 .payments{
@@ -150,7 +159,7 @@ h2, h3 {
  }
 
 .contacts p {
-    margin: 2% ;
+    margin: 2%;
 }
 
 .contacts span {
@@ -165,6 +174,18 @@ h2, h3 {
     background-color: rgb(193, 154, 106);
     padding: 1%;
     margin: 2%;
+}
+
+.acc {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.632);
+    color: black;
+    padding: 2% 0;
+    padding-left: 5%;
+}
+
+.acc img {
+    width: 22%;
 }
 
 footer {
@@ -240,12 +261,23 @@ footer img {
     .mobile-nav-toggle[aria-expanded='true'] {
         background-image: url("../icons/icon-close.svg");
     }
+
     .iruaimg > iframe {
+        width: 100%;
         margin-left: 0;
+    }
+    .photocontainer {
+        width: 90%;
     }
     .payments{
         display: flex;
         flex-direction: column;
+    }
+    .acc img {
+        width: 32%;
+    }
+    .acc span {
+        font-size: 90%;
     }
     footer {
         bottom:0;
