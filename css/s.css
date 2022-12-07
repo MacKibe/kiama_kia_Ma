@@ -1,0 +1,315 @@
+/* 
+    Google imported fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Kalam&family=Lobster&family=Mali:ital,wght@0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url("../images/ngonghills.jpg") ; */
+    background-color: rgba(0, 0, 0, 0.485);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    color: rgb(255, 255, 255);
+    font-size: 120%;
+}
+
+.logo img {
+    width: 10%;
+    height: 10%;
+}
+
+.header {
+    align-items: center;
+    background-color: rgb(103, 60, 60);
+    justify-content: space-between;
+    top: 0;
+    padding: 1% 1%;
+}
+
+nav {
+    padding: 1.5% 2%;
+}
+
+.primary-nav {
+    list-style: none;
+}
+
+.primary-nav a {
+    color: rgb(255, 255, 255);
+    font-size: 120%;
+    text-decoration: none;
+}
+.primary-nav a:hover {
+    font-size: 140%;
+    font-weight: 700;
+    border-bottom: 2px solid #fff;
+}
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.body {
+    font-size: 130%;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.body img {
+    width: 35%;
+    height: 20%;
+}
+
+hr {
+    color: aliceblue;
+}
+
+.title h2 {
+    text-align: center;
+    color: rgb(66, 173, 226);
+    font-family: 'Kalam', cursive;
+    letter-spacing: .29em;
+    text-shadow: 4px 4px 2px rgba(255, 255, 255, 0.41);
+}
+
+.body p {
+    margin-left: 7%;
+    font-family: 'Mali';
+}
+
+.body a {
+    color: rgb(255, 0, 0);
+    background-color: rgba(253, 253, 253, 0.973);
+    padding: 1%;
+}
+
+h2, h3 {
+    margin: 4.5% 0;
+    font-weight: 50px;
+    font-family: 'Rubik Bubbles', cursive;
+    color: rgb(208, 203, 52) ;
+    letter-spacing: .14em;
+}
+
+.requirements ul {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    flex-wrap: wrap;
+
+}
+.location iframe {
+    width: 100%;
+    margin: 0 auto;
+    height: 80vh;
+    box-shadow: #fff;
+}
+
+.irua {
+    display: block;
+}
+
+.iruaimg > iframe {
+    margin-left: 10%;
+    width:80%; 
+    height:60vh;
+}
+
+.irua p {
+    margin-bottom: 2%;
+}
+
+.requirements ul {
+    margin-left: 5%;
+}
+
+.photocontainer {
+    border: 2px solid white;
+    width: 90%;
+    margin: 2% auto;
+    display: flex;
+    overflow-x:scroll;
+    gap: 5%;
+    background-color: rgba(35, 60, 82, 0.579);
+}
+
+ .prayer {
+    margin: 10% 0;
+    padding: 5% .1%; 
+    background-color: rgba(185, 239, 175, 0.473);
+    text-align: center;
+    font-size: 140%;
+    letter-spacing: .65rem;
+    font-weight: 900;
+    font-family: 'Caveat', cursive;
+ }
+
+.contacts p {
+    margin: 2%;
+}
+
+.contacts span {
+    font-size: 120%;
+    margin: 2%;
+    padding: 1%;
+}
+
+.contacts span b {
+    color: rgb(0, 0, 0);
+    font-size: 120%;
+    background-color: rgb(193, 154, 106);
+    padding: 1%;
+    margin: 2%;
+}
+
+.acc {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.632);
+    color: black;
+    width: 60%;
+    padding: 0 20% 0;
+}
+
+.acc img {
+    width: 30%;
+    align-self: center;
+}
+
+.imgcontainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgcontainer img {
+    width: 70%;
+    height: 10vh;
+    margin: 10% 15% 0;
+    
+}
+
+footer {
+    bottom:0;
+    padding: 2% 20%;
+    background-color: rgba(176, 113, 71, 0.78);
+}
+
+footer img {
+    width: 5%;
+    height: 1%;
+}
+
+/* For projection Purposes */
+/* @media projection and (width: 1024px){
+    
+} */
+
+/* For viewing in smalll mobile screens */
+@media (max-width: 768px){
+    body {
+        background-image: url("../images/ngonghills.jpg") ;
+        background-color: rgba(0, 255, 0, 0.296);
+    }
+
+    .logo img {
+        width: 20%;
+        height: 12%;
+    }
+
+    .body {
+        width: 95%;
+    }
+    
+    .body img {
+        width: 85%;
+        height: 60%;
+        margin: auto;
+    }
+
+    .primary-nav {
+        --gap: 2rem;
+        z-index: 1000;
+        text-align: center;
+        position: fixed;
+        inset: 0 0 0 30%;
+        background-color: hsl(35 100% 90.2% / 0.86);
+        flex-direction: column;
+        padding: 15% 25%;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .primary-nav [data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background-image: url("../icons/icon-hamburger.svg");
+        background-color: transparent;
+        width: 1.5rem;
+        border: 0;
+        aspect-ratio: .1;
+        background-repeat: no-repeat;
+        top: .2rem;
+        right: 1rem;
+    }
+
+    .mobile-nav-toggle[aria-expanded='true'] {
+        background-image: url("../icons/icon-close.svg");
+    }
+
+    .iruaimg > iframe {
+        width: 95%;
+        margin-left: 2%;
+        height:40vh;
+    }
+
+    .payments{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .acc {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.632);
+        color: black;
+        padding: 0 20%;
+    }
+
+    .acc img {
+        width: 50%;
+    }
+
+    .acc span {
+        font-size: 90%;
+    }
+    footer {
+        bottom:0;
+        padding: 2% 10%;
+        background-color: rgba(70, 93, 30, 0.78);
+    }
+}
+
+@media (max-width: 414px){
+    /* body {
+        font-size: 65%;
+        width: 100%;
+        margin: 0 auto;
+    } */
+}

@@ -9,10 +9,11 @@
 * {
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 
 body {
-    background-image: url("../images/ngonghills.jpg") ;
+    /* background-image: url("../images/ngonghills.jpg") ; */
     background-color: rgba(0, 0, 0, 0.485);
     background-blend-mode: multiply;
     background-attachment: fixed;
@@ -23,21 +24,20 @@ body {
 }
 
 .logo img {
-    width: 15%;
+    width: 10%;
     height: 10%;
 }
 
 .header {
     align-items: center;
+    background-color: rgb(103, 60, 60);
     justify-content: space-between;
-    position: fixed;
     top: 0;
-    padding: 0 1%;
+    padding: 1% 1%;
 }
 
 nav {
     padding: 1.5% 2%;
-    background-color:#ff990036;
 }
 
 .primary-nav {
@@ -45,10 +45,15 @@ nav {
 }
 
 .primary-nav a {
-    color: white;
+    color: rgb(255, 255, 255);
+    font-size: 120%;
     text-decoration: none;
 }
-
+.primary-nav a:hover {
+    font-size: 140%;
+    font-weight: 700;
+    border-bottom: 2px solid #fff;
+}
 .flex {
     display: flex;
     gap: var(--gap, 1rem);
@@ -62,7 +67,6 @@ nav {
     font-size: 130%;
     width: 65%;
     margin: 0 auto;
-    padding: 7% 0;
 }
 
 .body img {
@@ -100,6 +104,7 @@ h2, h3 {
     color: rgb(208, 203, 52) ;
     letter-spacing: .14em;
 }
+
 .requirements ul {
     display: flex;
     flex-direction: column;
@@ -142,11 +147,6 @@ h2, h3 {
     background-color: rgba(35, 60, 82, 0.579);
 }
 
-.payments{
-    display: flex;
-    justify-content: space-between;
- }
-
  .prayer {
     margin: 10% 0;
     padding: 5% .1%; 
@@ -180,12 +180,25 @@ h2, h3 {
     display: flex;
     background-color: rgba(255, 255, 255, 0.632);
     color: black;
-    padding: 2% 0;
-    padding-left: 5%;
+    width: 60%;
+    padding: 0 20% 0;
 }
 
 .acc img {
-    width: 22%;
+    width: 30%;
+    align-self: center;
+}
+
+.imgcontainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgcontainer img {
+    width: 70%;
+    height: 10vh;
+    margin: 10% 15% 0;
+    
 }
 
 footer {
@@ -199,11 +212,14 @@ footer img {
     height: 1%;
 }
 
+/* For projection Purposes */
+/* @media projection and (width: 1024px){
+    
+} */
+
+/* For viewing in smalll mobile screens */
 @media (max-width: 768px){
     body {
-        font-size: 100%;
-        width: 100%;
-        margin: 0 auto;
         background-image: url("../images/ngonghills.jpg") ;
         background-color: rgba(38, 125, 38, 0.296);
         background-blend-mode: multiply;
@@ -218,8 +234,7 @@ footer img {
     }
 
     .body {
-        width: 90%;
-        margin: 0 auto;
+        width: 95%;
     }
     
     .body img {
@@ -227,6 +242,7 @@ footer img {
         height: 60%;
         margin: auto;
     }
+
     .primary-nav {
         --gap: 2rem;
         z-index: 1000;
@@ -263,19 +279,27 @@ footer img {
     }
 
     .iruaimg > iframe {
-        width: 100%;
-        margin-left: 0;
+        width: 95%;
+        margin-left: 2%;
+        height:40vh;
     }
-    .photocontainer {
-        width: 90%;
-    }
+
     .payments{
         display: flex;
         flex-direction: column;
     }
-    .acc img {
-        width: 32%;
+
+    .acc {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.632);
+        color: black;
+        padding: 0 20%;
     }
+
+    .acc img {
+        width: 50%;
+    }
+
     .acc span {
         font-size: 90%;
     }
@@ -287,9 +311,9 @@ footer img {
 }
 
 @media (max-width: 414px){
-    body {
+    /* body {
         font-size: 65%;
         width: 100%;
         margin: 0 auto;
-    }
+    } */
 }
