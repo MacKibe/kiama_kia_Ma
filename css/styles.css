@@ -67,6 +67,7 @@ nav {
     font-size: 130%;
     width: 65%;
     margin: 0 auto;
+    padding: 0 0 10%;
 }
 
 .body img {
@@ -234,7 +235,7 @@ footer img {
     }
 
     .body {
-        width: 95%;
+        width: 88%;
     }
     
     .body img {
@@ -293,16 +294,18 @@ footer img {
         display: flex;
         background-color: rgba(255, 255, 255, 0.632);
         color: black;
-        padding: 0 20%;
+        padding: 0 5%;
+        width: 100%;
     }
 
     .acc img {
-        width: 50%;
+        width: 30%;
     }
 
     .acc span {
-        font-size: 90%;
+        font-size: 85%;
     }
+
     footer {
         bottom:0;
         padding: 2% 10%;
