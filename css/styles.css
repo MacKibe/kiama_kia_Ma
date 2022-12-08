@@ -13,7 +13,7 @@
 }
 
 body {
-    /* background-image: url("../images/ngonghills.jpg") ; */
+    background-image: url("../images/ngonghills.jpg") ;
     background-color: rgba(0, 0, 0, 0.485);
     background-blend-mode: multiply;
     background-attachment: fixed;
@@ -67,7 +67,7 @@ nav {
     font-size: 130%;
     width: 65%;
     margin: 0 auto;
-    padding: 0 0 10%;
+    padding: 0 0 5%;
 }
 
 .body img {
@@ -181,12 +181,12 @@ h2, h3 {
     display: flex;
     background-color: rgba(255, 255, 255, 0.632);
     color: black;
-    width: 60%;
+    width: 100%;
     padding: 0 20% 0;
 }
 
 .acc img {
-    width: 30%;
+    width: 35%;
     align-self: center;
 }
 
@@ -196,10 +196,9 @@ h2, h3 {
 }
 
 .imgcontainer img {
-    width: 70%;
-    height: 10vh;
+    width: 100%;
+    height: 20vh;
     margin: 10% 15% 0;
-    
 }
 
 footer {
