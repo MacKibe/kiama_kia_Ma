@@ -26,11 +26,12 @@
             }
 
             main {
-                width: 80%;
+                width: 85%;
                 margin: 0 auto;
                 font-size: 70%;
-                display: flex;
-                gap: 5%;
+                display: grid;
+                grid-template-columns: 70% 30%;
+                gap: 2%;
             }
 
             .title {
@@ -50,25 +51,26 @@
                 letter-spacing: .4rem;
                 word-spacing: .2rem;
             }
-
-            section {
-                width: 80%;
-            }
             
             nav {
-                padding: 2%;
-                height: 50vh;
+                width: 15%;
+                margin-left: 64%;
+                height: 45vh;
+                padding-top: 2%;
+                padding-left: 2%;
+                position: fixed;
                 display: flex;
                 flex-direction: column;
-                gap: 7%;
-                border-left: 5px solid #FFF;
+                border-left: 8px solid rgb(86, 73, 73);
+                border-top: 2px solid #FFF;
+                background-color: rgb(132, 147, 113);
             }
 
             nav a {
                 text-decoration: none;
                 font-size: 120%;
-                background-color: #FFF;
-                padding: 2% 2%;
+                color: #FFF;
+                margin-top: 7%;
             }
 
             @media (max-width:768px) {
