@@ -1,9 +1,9 @@
 /* 
     Google imported fonts
 */
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Kalam&family=Lobster&family=Mali:ital,wght@0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 
 * {
@@ -24,8 +24,7 @@ body {
 }
 
 .logo img {
-    width: 10%;
-    height: 10%;
+    width: 25%;
 }
 
 .header {
@@ -75,16 +74,17 @@ nav {
     height: 20%;
 }
 
-hr {
-    color: aliceblue;
+.title {
+    background-color:rgba(0, 0, 0, 0.307);
+    padding: 1.5%;
+    margin-top: 2%;
 }
 
 .title h2 {
     text-align: center;
-    color: rgb(66, 173, 226);
-    font-family: 'Kalam', cursive;
-    letter-spacing: .29em;
-    text-shadow: 4px 4px 2px rgba(255, 255, 255, 0.41);
+    color: rgb(105, 170, 203);
+    font-family: 'Special Elite', cursive;
+    letter-spacing: .3em;
 }
 
 .body p {
@@ -98,12 +98,22 @@ hr {
     padding: 1%;
 }
 
-h2, h3 {
+h2 {
+    margin: 4% 0;
+    font-weight: 50px;
+    font-family: 'Macondo', cursive;
+    color: rgba(251, 246, 95, 0.714) ;
+    letter-spacing: .2em;
+    text-decoration: underline;
+}
+
+h3 {
     margin: 4.5% 0;
     font-weight: 50px;
     font-family: 'Rubik Bubbles', cursive;
-    color: rgb(208, 203, 52) ;
-    letter-spacing: .14em;
+    color: rgb(152, 174, 229) ;
+    letter-spacing: .1em;
+
 }
 
 .requirements ul {
