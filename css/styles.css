@@ -29,14 +29,11 @@ body {
 
 .header {
     align-items: center;
-    background-color: rgb(103, 60, 60);
+    background-color: rgba(103, 60, 60, 0.858);
     justify-content: space-between;
     top: 0;
-    padding: 1% 1%;
-}
-
-nav {
-    padding: 1.5% 2%;
+    padding: 1%;
+    position: fixed;
 }
 
 .primary-nav {
@@ -45,7 +42,7 @@ nav {
 
 .primary-nav a {
     color: rgb(255, 255, 255);
-    font-size: 120%;
+    font-size: 100%;
     text-decoration: none;
 }
 .primary-nav a:hover {
@@ -67,6 +64,7 @@ nav {
     width: 65%;
     margin: 0 auto;
     padding: 0 0 5%;
+    margin-top: 7%;
 }
 
 .body img {
@@ -77,7 +75,6 @@ nav {
 .title {
     background-color:rgba(0, 0, 0, 0.307);
     padding: 1.5%;
-    margin-top: 2%;
 }
 
 .title h2 {
