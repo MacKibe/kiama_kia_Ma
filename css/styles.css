@@ -134,7 +134,7 @@ h3 {
     display: block;
 }
 
-.iruaimg > iframe {
+.irua > iframe {
     margin-left: 10%;
     width:80%; 
     height:60vh;
@@ -146,6 +146,10 @@ h3 {
 
 .requirements ul {
     margin-left: 5%;
+}
+
+.gallery > iframe {
+    margin-left: 15%;
 }
 
 .photocontainer {
