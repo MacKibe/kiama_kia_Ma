@@ -23,6 +23,10 @@ body {
     font-size: 120%;
 }
 
+.main-page {
+
+}
+
 .logo img {
     width: 25%;
 }
@@ -62,11 +66,15 @@ body {
 }
 
 .body {
+    background-color:rgba(0, 0, 0, 0.307);
     font-size: 130%;
     width: 65%;
     margin: 0 auto;
-    padding: 0 0 5%;
     margin-top: 7%;
+}
+
+.body div:not(.title,.photocontainer,.prayer,.payments,.accounts,.acc,.contact,.imgcontainer,.profile){
+    padding: 0 2.5%;
 }
 
 .body img {
@@ -158,7 +166,6 @@ h3 {
 
 .photocontainer {
     border: 2px solid white;
-    width: 90%;
     margin: 2% auto;
     display: flex;
     overflow-x:scroll;
@@ -166,6 +173,9 @@ h3 {
     background-color: rgba(35, 60, 82, 0.579);
 }
 
+.photocontainer img:not(.firewoodPics,.mattressPics) {
+    width: 45%;
+}
  .prayer {
     margin: 10% 0;
     padding: 5% .1%; 
