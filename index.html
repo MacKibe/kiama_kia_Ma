@@ -2,9 +2,120 @@
 <html>
     <head>
         <title>Kiama Kia Ma</title>
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link href="css/styles.css" media="screen" rel="stylesheet" type="text/css"/>
+        <meta content="width=device-width, initial-scale=1" 
+              name="viewport" />
+        <link href="css/styles.css" media="screen" rel="stylesheet" 
+              type="text/css"/>
         <script src="scripts/index.js" defer></script>
+        <script>
+            //When the page loads, an Intersection Observer ensures that a video
+            //is played when it is in out view port; otherwise it is paused.
+            //
+            //Note: The video has to be muted before you can control its playing and 
+            //pausing programmatically!
+            window.onload = function(){
+                //
+                //Collect the 2 key parameters of an intersection observer object
+                //
+                //1. The callback function to call whenever we scroll
+                const callback = (entries, observer)=>{
+                    //
+                    //For each observed entry-----
+                    for(const entry of entries){
+                        //
+                        //----get the target element (as a video)
+                        const video =entry.target;
+                        //
+                        //----if the video ntersets with the view port....
+                        if (entry.isIntersecting) {
+                            //
+                            //...play the video
+                            video.play();
+                            video.muted = false;
+                        }
+                        //
+                        //...otherwise
+                        else {
+                            //
+                            //Pause the video
+                            video.pause();
+                        };
+                    }
+                };
+                //
+                //2. The options for controlling the intersection.
+                //In our case the options are:-
+                //- There is intersection if at least half of the video is visible
+                const options = {threshold:1};
+                //
+                //Create a new intersection observer object
+                const observer = new IntersectionObserver(callback, options);
+
+                //Collect all the videos on this page, as an array
+                const videos = Array.from(document.querySelectorAll('video'));
+                //
+                //For each video...
+                for(const video of videos){
+                    //
+                    //...mute the video (otherwise it won't play!)
+                    video.muted = false;
+                    //
+                    //...put the video in the list of observed entries
+                    observer.observe(video);
+                }
+            };
+
+            window.onload = function(){
+            //
+            //Collect the 2 key parameters of an intersection observer object
+            //
+            //1. The callback function to call whenever we scroll
+            const callback = (entries, observer)=>{
+                //
+                //For each observed entry-----
+                for(const entry of entries){
+                    //
+                    //----get the target element (as an audio)
+                    const audio =entry.target;
+                    //
+                    //----if the audio ntersets with the view port....
+                    if (entry.isIntersecting) {
+                        //
+                        //...play the audio
+                        audio.play();
+                    }
+                    //
+                    //...otherwise
+                    else {
+                        //
+                        //Pause the audio
+                        audio.pause();
+                    };
+                }
+            };
+            //
+            //2. The options for controlling the intersection.
+            //In our case the options are:-
+            //- There is intersection if at least half of the audio is visible
+            const options = {threshold:1};
+            //
+            //Create a new intersection observer object
+            const observer = new IntersectionObserver(callback, options);
+
+            //Collect all the audio on this page, as an array
+            const audios = Array.from(document.querySelectorAll('audio'));
+            //
+            //For each audio...
+            for(const audio of audios){
+                //
+                //...mute the audio (otherwise it won't play!)
+                audio.muted = false;
+                //
+                //...put the audio in the list of observed entries
+                observer.observe(audio);
+            }
+        };
+    </script>
     </head>
     <body>
         <!-- the header part contains the title of the webpage -->
@@ -16,10 +127,12 @@
                 </a>
             </div>
 
-            <button aria-controls="primary-nav" aria-expanded="false" class="mobile-nav-toggle"></button>
+            <button aria-controls="primary-nav" aria-expanded="false" 
+                    class="mobile-nav-toggle"></button>
 
             <nav>
-                <ul id="primary-nav" data-visible="false" class="primary-nav flex">
+                <ul id="primary-nav" data-visible="false" 
+                    class="primary-nav flex">
                     <li>
                         <a href="./index.html"><span>Home</span></a>
                     </li>
@@ -42,7 +155,6 @@
             </nav>                
         </header>
         <div id="body" class="body">
-            
             <!-- Section with title and nav bar -->
             <div class="title">
             <h2>Gikuyu Cultural Circumcision<br> December 2022</h2>
@@ -52,7 +164,9 @@
             <div id="whyUs" class="whyUs">
                 <h2>Why Choose Our Services</h2>
                 <p>
-                    We have qualified doctors who will take care of your kids. Your child will be taught some useful life skills that we help him as he grows.
+                    We have qualified doctors who will take care of your kids. 
+                    Your child will be taught some useful life skills that we
+                    help him as he grows.
                 </p>
             </div>
             
@@ -72,20 +186,18 @@
             <!-- The requirements section -->
             <div id="requirements" class="requirements">
                 <h2>What Your Child Should Carry</h2>
-                <p>
-                    <ul>
-                        <li>Beddings</li>
-                        <li>Slippers</li>
-                        <li>Plate</li>
-                        <li>Cup</li>
-                        <li>Bucket</li>
-                        <li>Towel</li>
-                        <li>Soaps</li>
-                        <li>Tooth Paste</li>
-                        <li>Brush</li>
-                        <li>Tissue Paper</li>
-                    </ul>
-                </p>
+                <ul>
+                    <li>Beddings</li>
+                    <li>Slippers</li>
+                    <li>Plate</li>
+                    <li>Cup</li>
+                    <li>Bucket</li>
+                    <li>Towel</li>
+                    <li>Soaps</li>
+                    <li>Tooth Paste</li>
+                    <li>Brush</li>
+                    <li>Tissue Paper</li>
+                </ul>
             </div>
             
             <!-- The location section -->
@@ -98,7 +210,7 @@
             <div class="irua">
                 <!-- The irua section containing an embedded youtube video -->
                 <h2>Irua Ni Igongona Riria Inene Ria Mucii</h2>
-                <iframe src="https://www.youtube.com/embed/L44xc8WNpPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="video-iframe" src="https://www.youtube.com/embed/L44xc8WNpPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 <p>Iruua:-- <b>nî njiarano ya ituîka na ituîka rîa andû atatû kuuma irûngo rîrîa marûge rîu rîngî, nî rîmwe rîa magongona marîa mûgwanja ma mwana wa kahîî Atuîki nî Aya</b></p>
                 <p>Nyina wa mwana...atuîke kuuma kang'ei atuîke karegeire</p>
@@ -120,17 +232,24 @@
             <div class="events">
                 <!-- Events section -->
                 <h2>Upcoming event...</h2>
-                <img src="images/mararanja2.jpg" alt="">
-                <img src="images/mararanja.jpg" alt=""><br><br>
-                <span>Club Base Three Location: <a href="https://goo.gl/maps/WUDdBR8dXtC3wQM68">See Location</a></span>
+                <img src="./images/mararanja.jpg" alt="">
+                
+                <audio class="audio" id="audio" controls>
+                    <source src="./audio/mkthiiru.mp3" type="audio/mpeg">
+                </audio>
+                  
+                <img src="images/mararanja2.jpg" alt=""><br><br>
+                
+                <p>
+                    Club Base Three Location: <a href="https://goo.gl/maps/WUDdBR8dXtC3wQM68">See Location</a>
+                </p>
             </div>
             
             <!-- The gallery section containing all the images of the whole event -->
             
             <div class="gallery" id="gallery">
                 <h2>Gallery</h2>
-                <h4>Graduation</h4><br>
-                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Frose.ngure.31%2Fvideos%2F3047795495522032%2F&show_text=false&width=261&t=0" width="261" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                <!-- <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Frose.ngure.31%2Fvideos%2F3047795495522032%2F&show_text=false&width=261&t=0" width="261" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe> -->
                 <div class="photocontainer">
                     <img class="graduationPics" src="./images/g1.jpg" alt="">
                     <img class="graduationPics" src="./images/g2.jpg" alt="">
@@ -143,20 +262,24 @@
                     <img class="graduationPics" src="./images/g9.jpg" alt="">
                     <img class="graduationPics" src="./images/g10.jpg" alt="">
                     <img class="graduationPics" src="./images/g12.jpg" alt="">
+                    <div class="image-text">
+                        <h4>Graduation</h4>
+                    </div>
                 </div>
                 
                 <h4>Kuruta irui uhii,Wana na urimu</h4>
                 <div class="photocontainer">
-                    <img src="./images/irua1.jpg" alt="">
-                    <img src="./images/irua2.jpg" alt="">
-                    <img src="./images/irua3.jpg" alt="">
-                    <img src="./images/irua4.jpg" alt="">
-                    <img src="./images/irua5.jpg" alt="">
-                    <img src="./images/irua6.jpg" alt="">
+                    <img class="kurutapics" src="./images/irua1.jpg" alt="">
+                    <img class="kurutapics" src="./images/irua2.jpg" alt="">
+                    <img class="kurutapics" src="./images/irua3.jpg" alt="">
+                    <img class="kurutapics" src="./images/irua4.jpg" alt="">
+                    <img class="kurutapics" src="./images/irua5.jpg" alt="">
+                    <img class="kurutapics" src="./images/irua6.jpg" alt="">
                 </div>
                 <h3>Preparations</h3>
                 <h4>Collecting Firewood</span><br>   
                 <div class="photocontainer">
+                    <span>Click to open</span>
                     <img class="firewoodPics" src="images/pre1.jpg" alt="">
                     <img class="firewoodPics" src="images/pre2.jpg" alt="">
                     <img class="firewoodPics" src="images/pre3.jpg" alt="">

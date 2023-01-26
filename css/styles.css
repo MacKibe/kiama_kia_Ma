@@ -23,10 +23,6 @@ body {
     font-size: 120%;
 }
 
-.main-page {
-
-}
-
 .logo img {
     width: 25%;
 }
@@ -68,13 +64,14 @@ body {
 .body {
     background-color:rgba(0, 0, 0, 0.307);
     font-size: 130%;
-    width: 65%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 7%;
+    padding: 0 3%;
 }
 
 .body div:not(.title,.photocontainer,.prayer,.payments,.accounts,.acc,.contact,.imgcontainer,.profile){
-    padding: 0 2.5%;
+    /* padding: 0 2%; */
 }
 
 .body img {
@@ -83,7 +80,6 @@ body {
 }
 
 .title {
-    background-color:rgba(0, 0, 0, 0.307);
     padding: 1.5%;
 }
 
@@ -160,19 +156,66 @@ h3 {
     margin-left: 5%;
 }
 
+audio {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
 .gallery > iframe {
     margin-left: 15%;
 }
 
+/* 
+This is the previous slide show
 .photocontainer {
     border: 2px solid white;
     margin: 2% auto;
+    width: 30%;
     display: flex;
     overflow-x:scroll;
     gap: 5%;
     background-color: rgba(35, 60, 82, 0.579);
+} */
+.photocontainer {
+    position: relative;
+    background-color: #fff;
 }
 
+.photocontainer > img {
+    
+}
+
+.image-text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 70%;
+    left: 10%;
+    font-size: 250%;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.photocontainer:hover .image-text {
+    opacity: 0;
+}
+
+.photocontainer:hover img {
+    opacity: 1;
+}
+
+.photocontainer img {
+    transition: opacity 0.5s ease-in;
+    opacity: .3;
+}
+
+
+/* .photocontainer:hover img {
+    opacity: 1;
+}
+.photocontainer:hover h4 {
+    opacity: .5;
+} */
 .photocontainer img:not(.firewoodPics,.mattressPics) {
     width: 45%;
 }
