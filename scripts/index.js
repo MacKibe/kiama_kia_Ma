@@ -1,21 +1,30 @@
-//
-// Assigning my html elements variables
-// const primaryNav = document.querySelector(".primary-nav");
-// const navToggle = document.querySelector(".mobile-nav-toggle");
 
-//
-// Adding event listener to the button whent the user taps the button.
-// navToggle.addEventListener("click", () => {
-//     const visibility = primaryNav.getAttribute('data-visible');
+Assigning my html elements variables
+const primaryNav = document.querySelector(".primary-nav");
+const navToggle = document.querySelector(".mobile-nav-toggle");
 
-//     if (visibility === "false") {
-//         primaryNav.setAttribute('data-visible', true);
-//         navToggle.setAttribute('aria-expanded', true);
-//     } else if (visibility === "true") {
-//         primaryNav.setAttribute('data-visible', false);
-//         navToggle.setAttribute('aria-expanded', false);
-//     }
-// });
+
+Adding event listener to the button whent the user taps the button.
+navToggle.addEventListener("click", () => {
+    const visibility = primaryNav.getAttribute('data-visible');
+
+    if (visibility === "false") {
+        primaryNav.setAttribute('data-visible', true);
+        navToggle.setAttribute('aria-expanded', true);
+    } else if (visibility === "true") {
+        primaryNav.setAttribute('data-visible', false);
+        navToggle.setAttribute('aria-expanded', false);
+    }
+});
+var slides = document.querySelectorAll('.graduationPics');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide, 2000);
+
+function nextSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+}
 
 // CReating a photo slideshow
 // var slideIndex = 0;

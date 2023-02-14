@@ -20,7 +20,7 @@ body {
     background-size: cover;
     overflow-x: hidden;
     color: rgb(255, 255, 255);
-    font-size: 120%;
+    font-size: 100%;
 }
 
 .logo img {
@@ -165,7 +165,7 @@ audio {
 .gallery > iframe {
     margin-left: 15%;
 }
-
+    
 /* 
 This is the previous slide show
 .photocontainer {
@@ -178,9 +178,23 @@ This is the previous slide show
     background-color: rgba(35, 60, 82, 0.579);
 } */
 .photocontainer {
+    max-width: 100%;
     position: relative;
-    background-color: #fff;
 }
+
+.graduationPics {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.active {
+    opacity: 1;
+}
+
 
 .photocontainer > img {
     
@@ -291,12 +305,13 @@ footer img {
 /* For viewing in smalll mobile screens */
 @media (max-width: 768px){
     body {
-        background-image: url("../images/ngonghills.jpg") ;
+        background-image: url("../images/g1.jpg") ;
         background-color: rgba(38, 125, 38, 0.296);
         background-blend-mode: multiply;
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
+        font-size: 90%;
     }
 
     .logo img {
