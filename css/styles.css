@@ -46,10 +46,8 @@ header img {
     font-size: 70%;
 }
 
-.side-bar {
+aside {
     background-color: antiquewhite;
-    margin-top: 40%;
-    height: 50dvh;
 }
 
 main {
@@ -119,7 +117,7 @@ h2:not(.title) {
     text-align: center;
 
 }
-
+  
 .requirements ul {
     display: flex;
     flex-direction: column;

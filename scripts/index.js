@@ -49,13 +49,13 @@ window.onload = function(){
     //1. The callback function to call whenever we scroll
     const callback = (entries, observer)=>{
        //
-       //For each observed entry-----
+       // For each observed entry-----
        for(const entry of entries){
            //
            //----get the target element (as an audio)
            const audio =entry.target;
            //
-           //----if the audio ntersets with the view port....
+           //----if the audio intersets with the view port....
            if (entry.isIntersecting) {
                //
                //...play the audio
@@ -70,25 +70,25 @@ window.onload = function(){
            };
        }
    };
-   //
-   //2. The options for controlling the intersection.
-   //In our case the options are:-
-   //- There is intersection if at least half of the audio is visible
-   const options = {threshold:1};
-   //
-   //Create a new intersection observer object
-   const observer = new IntersectionObserver(callback, options);
-
-   //Collect all the audio on this page, as an array
-   const audios = Array.from(document.querySelectorAll('audio'));
-   //
-   //For each audio...
-   for(const audio of audios){
-       //
-       //...mute the audio (otherwise it won't play!)
-       audio.muted = false;
-       //
-       //...put the audio in the list of observed entries
-       observer.observe(audio);
-   }
 };
+
+// Get all menu items and sections
+const menuItems = document.querySelectorAll('.side-nav-menu li a');
+const sections = document.querySelectorAll('.section');
+
+// Create an IntersectionObserver to detect when a section is in view
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    // If a section is in view, add the "active" class to its corresponding menu item
+    const id = entry.target.getAttribute('id');
+    const menuItem = document.querySelector(`.side-nav-menu li a[href="#${id}"]`);
+    if (entry.isIntersecting) {
+      menuItem.classList.add('active');
+    } else {
+      menuItem.classList.remove('active');
+    }
+  });
+});
+
+// Observe all sections
+sections.forEach(section => observer.observe(section));
