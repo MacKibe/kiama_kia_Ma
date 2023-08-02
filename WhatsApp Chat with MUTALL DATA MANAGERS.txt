@@ -1,0 +1,369 @@
+['date', 'time', 'sender', 'message']
+3/7/23, 15:07 - Messages and calls are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Tap to learn more.
+3/20/18, 21:22 - +254 716 276879 created group "MUTALL DATA MANAGERS"
+3/7/23, 15:07 - Peter Mutall added you
+3/8/23, 13:51 - Mr. Muraya: https://sscnr.net.in/google-bard-ai/#LaMDA
+3/8/23, 13:51 - Mr. Muraya: For image processing enthusiasts
+3/9/23, 08:25 - Peter Mutall: Good Morning team, I will come in late
+3/9/23, 09:05 - Hallelujah: <Media omitted>
+3/10/23, 20:02 - Mr. Muraya: Carol: please send me your meta-visuo code
+3/10/23, 20:03 - Mr. Muraya: Kang'ara: please send me your exam_result code
+3/10/23, 22:08 - Kang'ara: sending
+3/11/23, 12:29 - Mr. Muraya: Message from Francis....
+
+Hello i won't be able to join you for the foreseeable future.  I had an application for a job that came early than expected and i didn't get a chance to inform you on that. Sorry for any inconveniences......
+
+I think this is something to be proud about....rather than be sorry. That's why I copied the message to the group.
+3/11/23, 13:33 - James: all the best @254759463826
+3/11/23, 13:37 - George Mutall: @254759463826 best of luck
+3/11/23, 13:39 - Kang'ara: Congratulations @254759463826
+3/11/23, 13:40 - +254 728 558539: Congrats
+3/11/23, 13:41 - +254 716 276879: This is great news 👏🏾👏🏾 congrats @254759463826
+3/11/23, 13:43 - Peter Mutall: Great news congrats @254759463826
+3/11/23, 13:59 - sharon: Congratulations @254759463826
+3/11/23, 14:09 - +254 759 463826: Thank you all
+3/11/23, 14:14 - Hallelujah: Congrats @254759463826 All the best.
+3/11/23, 22:05 - +254 718 321226: congrats @254759463826
+3/12/23, 13:26 - +254 717 312320: Congrats @254759463826 and all the best out there
+3/13/23, 08:04 - James: Morning I’ll not make it to the office today.
+3/13/23, 08:14 - sharon: Good morning, I will not make it to the office today
+3/13/23, 08:53 - George Mutall: Morning...I'll not be able to make it to the office today
+3/14/23, 09:22 - +254 718 321226: Know anybody who is good at C#,PHP Laravel?Experienced or willing to  take a junior  role  and undergo  a probation  period for 4 months before you negotiate for that salary you  want.Someone willing to learn and adapt  quickly  in a fast paced environment.Send me your cv  here  or email jmulingwakithome.jmk@gmail.com.
+3/16/23, 15:07 - Peter Mutall added Carol Mutall
+3/16/23, 15:13 - Mr. Muraya: <Media omitted>
+3/16/23, 15:14 - Mr. Muraya: Muli, ideas about your mshauri
+3/17/23, 09:14 - George Mutall: Good Morning team, I will come in late
+3/20/23, 07:17 - sharon: Good Morning, I will come in late
+3/20/23, 09:02 - George Mutall: morning,I will come in late
+3/21/23, 09:39 - George Mutall: <Media omitted>
+3/21/23, 21:20 - Mr. Muraya: Carol, it's your day tomorrow. Make the morning session work for you. Start by presenting refined minutes of last time, grouped under headings that match your portfolio. Please emphasize the issues that came out, the suggestions that were given to you. To hen tell us what has transpired within the last 2 weeks...your discoveries, lessons learnt and give indications where your work is headed.
+3/21/23, 21:22 - Mr. Muraya: The image processing group is also meeting tomorrow. Mugambi is heading that thematic working group. Please use the same format as suggested above
+3/22/23, 07:48 - Carol Mutall: Goodmorning I will come in some minutes late
+3/22/23, 07:51 - Mr. Muraya: George, please send a link to the ordination ceremony plus the pictures of the kichijio documents
+3/22/23, 13:28 - George Mutall: http://206.189.207.206/munya/ordination/Ordination%20Prog.html
+3/22/23, 19:33 - Mr. Muraya: Who is presenting tomorrow: kibe or muli? Please follow carol's guidelines
+3/22/23, 19:34 - Mr. Muraya: Here they are.
+3/22/23, 20:26 - James: its me
+3/22/23, 20:27 - James: noted.
+3/22/23, 20:52 - Mr. Muraya: Thanks
+3/22/23, 20:56 - Mr. Muraya: Peter, I have noted the changes to the websocket system. Thanks. Looks more polished on my mobile.  3 other issues to look at:-
+3/22/23, 20:56 - Mr. Muraya: 1. Change the heading to something like:
+3/22/23, 20:57 - Mr. Muraya: Testing a messaging system for mutall interns
+3/22/23, 21:01 - Mr. Muraya: 2. Save the user name to the window' registry, do that we don't have to type in every time we want to chart. Only when the registry is empty should we enter it. 3. Drop the milliseconds in the time signature. 4. Consider saving the messages to a database
+3/22/23, 21:06 - Mr. Muraya: Another websocket idea: if a message is sent via this chart application and you are logged in to a mutall app, e.g., tracker, you can see the message in the tracker message pannel
+3/22/23, 21:59 - Peter Mutall: 1 & 2 sorted, 3 & 4(idea),noted.
+3/23/23, 08:18 - Mr. Muraya: To address point 4, and most other issues that will arise after many more programmers have see this version, consider the following:
+3/23/23, 08:19 - Mr. Muraya: Define a class, say mutall_socket, whose constructor must be very well document.
+3/23/23, 08:21 - Mr. Muraya: Define a method, say, send_message(text:sting): result...
+3/23/23, 08:22 - Mr. Muraya: The structure of result should tell the programmer whether the message was sent or not. If not, why?
+3/23/23, 08:23 - Mr. Muraya: That's all. Programmers can extend this class to do what they want.
+3/23/23, 08:25 - Mr. Muraya: I mean a javascript class
+3/23/23, 08:27 - Peter Mutall: There's actually one that I had began to develop, earlier on..
+3/23/23, 08:30 - Mr. Muraya: I'd like to test it; or better still, develop a test sample code..,the equivalent of 'hello world'
+3/23/23, 08:34 - Peter Mutall: Noted
+3/23/23, 08:36 - Mr. Muraya: Furthermore, the 'why failed' aspect of the result need not be understanble by ordinary mortals, but it is an output which if I sent you, you would immediately know what has gone wrong, helping to solve the pronlem
+3/23/23, 08:37 - Peter Mutall: I will take that into consideration.
+3/23/23, 08:39 - Peter Mutall: You were to help me out in pushing the Payments agenda forward, how should I proceed?
+3/23/23, 08:43 - Kang'ara: Good morning, I will not make it to the office today
+3/23/23, 08:46 - Mr. Muraya: Help me to get a till number for my personal account no. 01109583919300. Name:Peter K.Muraya, Coop Bank Kiserian branch
+3/23/23, 09:33 - Carol Mutall: Good morning I will come in late
+3/23/23, 11:42 - +254 728 558539: Sorry I have missed a lot,will be in from next week,had other issues to deal with.
+3/23/23, 15:42 - Mr. Muraya: Is this Isaac or mugambi?
+3/24/23, 08:16 - Peter Mutall: Good Morning, I will come in late
+3/24/23, 11:33 - Mr. Muraya: https://code.tutsplus.com/tutorials/how-to-crop-or-resize-an-image-with-javascript--cms-40446
+3/24/23, 11:34 - Mr. Muraya: For the image processing enthusiats
+3/24/23, 11:36 - Mr. Muraya: https://cloudinary.com/guides/automatic-image-cropping/5-ways-to-crop-images-in-html-css
+3/24/23, 20:13 - Mr. Muraya: The timetable is improving by the day. We have working groups clearly shown. Thanks Shallon. Can you:-a) hunt for the best icons to represent each working group, b) create a link to the timetable so that other members of this forum can review and comment on it.
+3/24/23, 22:15 - sharon: http://206.189.207.206/tracker/timetable/timetable.php
+3/24/23, 22:15 - sharon: Here is the link
+3/27/23, 07:55 - Peter Mutall: Hello Team, Good Morning
+3/27/23, 07:58 - Peter Mutall: I have made some changes to how we download /upload data to our server, A further detailed debrief will be done in today's session.
+3/27/23, 07:59 - Peter Mutall: These changes are made to improve the security of our server as a result of some malicious activity noted on that server.
+3/27/23, 07:59 - Peter Mutall: Good day to you all
+3/27/23, 09:28 - Mr. Muraya: I will be late. Trying to sort out electricity data
+3/28/23, 14:25 - Mr. Muraya: Good afternoon sir,I am sorry I will not be able to attend the office anytime soon,I was recently mugged at our home area and lost my laptop unfortunately.I am now recuperating at home,sorry for the inconvenience caused
+3/28/23, 14:26 - Mr. Muraya: Message from Mugambi. Pole
+4/4/23, 20:59 - Mr. Muraya: Do you know of a structure called Map ( in any programming language?). Read about it. Kangara, you need it for solving the current cell_id problem. In general, you need a map when the order in which you insert keys matter. I will have a joint session on maps tommorrow. Join us if interested.
+4/4/23, 22:01 - Kang'ara: Okay
+4/6/23, 11:15 - Hallelujah: Hello team,
+
+I'm unavailable for the bash today, I'm a bit engaged elsewhere till evening. 
+
+Enjoy yourselves.
+4/6/23, 13:17 - Mr. Muraya: Which bash?
+4/7/23, 14:26 - +254 716 276879: <Media omitted>
+4/7/23, 20:38 - +254 708 255856: Am gate rushing
+4/7/23, 20:39 - +254 708 255856: Happy Easter fam
+4/11/23, 07:29 - James: Good morning, I will not make it to the office today
+4/11/23, 08:30 - George Mutall: Good morning, I will not make it to the office today
+4/12/23, 09:32 - Peter Mutall added Mwaniki
+4/12/23, 09:35 - Mwaniki: Thanks.
+4/13/23, 09:10 - George Mutall: Good morning,i wont make it to the office today,feeling unwell
+4/13/23, 09:11 - George Mutall: <Media omitted>
+4/13/23, 09:11 - George Mutall: <Media omitted>
+4/13/23, 09:12 - George Mutall: <Media omitted>
+4/14/23, 10:10 - Mr. Muraya: Is the power back to office? I will not be in office today
+4/14/23, 10:11 - Mr. Muraya: The position for the chicken foot is not very clear. Clarify this before printing it
+4/14/23, 10:12 - George Mutall: okay.
+4/14/23, 10:14 - Mr. Muraya: Kangara, please send me (by copy and pasting here) the code for the  crown.show() method
+4/14/23, 10:15 - Peter Mutall: Yes, there is, but there are some fixes that need to be done, some sockets dont have power
+4/14/23, 10:15 - Mr. Muraya: Carol, is the chicken foot marker functional now?
+4/14/23, 10:16 - Kang'ara: Okay
+4/14/23, 10:17 - Mr. Muraya: Ask njau to put sockets in our office to do away with all the extension cables
+4/14/23, 10:17 - Peter Mutall: We have informed Njau the electrician of that. Okay
+4/14/23, 10:18 - Peter Mutall: Okay.
+4/14/23, 10:20 - Mr. Muraya: Also, have a look at Kibes data and jointly sketch a model that we can discuss
+4/14/23, 10:20 - Mr. Muraya: Mwanikis data, as well
+4/14/23, 10:23 - Mr. Muraya: Kaniu, I have thot thru the kentonary interface; let's discuss it next week at your convenience
+4/14/23, 11:12 - Hallelujah: Ok Sir, thanks.
+4/14/23, 11:24 - Kang'ara: You deleted this message
+4/14/23, 12:15 - Kang'ara: http://206.189.207.206/kangara/school/code/exam.ts
+4/14/23, 12:51 - Mr. Muraya: Unable to view a ts file on my phone. Why not copy paste the method I requested here
+4/14/23, 12:56 - Kang'ara: On it
+4/15/23, 11:46 - Mr. Muraya: Carol, consider making metavisuo the default subject in our application interface. Do you understand what I mean?
+4/15/23, 15:22 - Mr. Muraya: Peter, now that you have sorted out the technical chat issues, can we revisit our messenger. The key item is to recognize socket technology alongside email, twilio and mobitech sms
+4/15/23, 15:28 - Peter Mutall: Yeah, but there are some issues, I will point out, that might improve/change how we are looking at that messenger
+4/15/23, 15:39 - Mr. Muraya: List them
+4/15/23, 16:26 - Peter Mutall: The messenger panel, in the app.main page supports messages that you can reply to, but chats should have a dedicated input from which you could respond to. So there is need to separate both messages.
+4/18/23, 09:26 - Mr. Muraya: I'm unable to participate in the morning session because I will be late and I cannot read any of your minutes. Please convert them from md to html MANUALLY as agreed. Automation comes later.
+4/18/23, 10:32 - Peter Mutall: I have developed some sort of Interface to help you to do that, kindly take a look at it. Someone else will pick it up from there..
+4/18/23, 11:18 - Mr. Muraya: Deploy the interface, so that I don't have to try accessing the raw .md file....Nevertheless, why are the others finding it hard to convert an md file to a html?? My immediate interest is by the fastest means possible be able to read the daily minutes. George had a good presentation now, which I could not follow then. I have some time now as I take coffee; I would like to read the minutes now now, while the presentation is still hot.
+4/18/23, 11:31 - Peter Mutall: There is an interface to view the markdown files, for each presenter
+4/18/23, 11:32 - Mr. Muraya: Send me the link(s)
+4/18/23, 11:33 - Peter Mutall: On the timetable interface, click on Minutes, and you should see an interface
+4/18/23, 11:44 - Mr. Muraya: Thanks
+4/18/23, 11:52 - Mr. Muraya: I have seen the interface.  Navigation is not yet a problem, let's not focus on it. Simplify the interface to that what comes up immediately is the list of all presentations as they appear on disk.My focus right now is on the quality of content of the minutes, and how they relate to the portfolio. Are we making progress towards our goals? Is the progress slow it fast? Who is lagging behind. What can we do to speed him/her up?  How could this joint working session  be improved? If you were called for an interview today, can you present your current work to speak for you?
+4/18/23, 18:21 - Mr. Muraya: Home page for the minutes is now looking ok. A few improvements:
+4/18/23, 18:22 - Mr. Muraya: -use a tabular layout for the output
+4/18/23, 18:22 - Mr. Muraya: -using 2 columns: name and date
+4/18/23, 18:24 - Mr. Muraya: -exclude minute files that don't qualify as such
+4/18/23, 18:32 - Mr. Muraya: After this lets pay attention to the content of these minutes. My first problem is styling. Can we have it standardized, making it easier to read on phone, project, and viewng on laptop
+4/19/23, 18:12 - +254 735 999400: For anyone who is interested, received an email from an online meet up group :-
+4/19/23, 18:12 - +254 735 999400: Hello ,
+
+I would like to invite you to register and attend this month's exciting event , incase you haven't. In this month's online event, Andrew Miracle , Tech entrepreneur and AI consultant will share his journey to building ChatKJV, a popular  AI-powered chatbot that provides users with scriptures from the King James Bible, based on how they feel. It is designed to allow users to interact with the scriptures in a more conversational way.
+
+The event will be happening next week ,Thursday 27th April, from 7PM - 8PM EAT , on Zoom.  This event is for startup founders, future tech entrepreneurs , students , software engineers and any other tech enthusiast interested in how to build AI software products.
+
+Full event details and free registration are on https://bit.ly/27aik.
+
+Warm regards ,
+
+Alfred Ongere
+
+Founder
+4/20/23, 09:08 - sharon: Good morning, I will not make it to the office today
+4/20/23, 15:46 - +254 735 999400: We are seeking a skilled front-end developer with expertise in Angular, React (optional), and API integration to join our development team. The successful candidate will be responsible for designing and implementing front-end solutions that integrate with various APIs and deliver a seamless user experience.
+
+Requirements:
+
+1. Two to three years’ experience in front-end development, with a focus on Angular and optional React.
+2. Strong understanding of API integration and experience working with RESTful APIs.
+3. Proficiency in HTML, CSS, and JavaScript.
+4. Familiarity with Agile development methodologies.
+5. Excellent problem-solving skills and attention to detail.
+6. Ability to work collaboratively in a team environment.
+7. Initiative and Can work with minimal supervision
+8. Relevant qualifications and work experience are valued, and a degree is not strictly required
+
+If interested and qualified, send your CV to people@ketha.africa
+4/24/23, 09:09 - Mr. Muraya: Hi all. I expected to see kang'ara s minutes of last time, for me to get some ideas on the issues he is working on. The latest ones on the server are for 17/4,/2023. Can we please update the minutes as soon as a presentation is done? Shallon has fine a good job of making your past minutes consistent, but it is your responsibility to update the server and adhere to peter's md recommendation.
+4/24/23, 13:38 - +254 735 999400: https://www.jumba.com/careers
+4/25/23, 07:23 - Mr. Muraya: Mwaniki, yesterday you made a presentation. I did not participate and would have liked to. I still want to participate  -- if only you can update your minutes. I have been looking for file mesniki_20230424.md on our server, styled using peter'd markdown revommrndstion
+4/25/23, 07:25 - Mr. Muraya: In addition, we discussed your model and the next steps. This too should be reflected in the minutes, so we can follow your progress
+4/25/23, 07:27 - Mr. Muraya: Revise your portfolio to style in the same way as muli, George, kang'ara or peter.  Through this message Im asking izac, mugambi and shallon to follow suit
+4/25/23, 07:37 - Mr. Muraya: Kibe, what is a mutation_adap_street_no?
+4/25/23, 07:39 - Mr. Muraya: ...sorry..mutation registry_adap_street_no
+4/25/23, 07:40 - Mr. Muraya: What is a mutation_no? And the difference?
+4/25/23, 07:58 - James: let me confirm the difference later in the day.
+4/25/23, 10:02 - Mwaniki: Good morning,updated.
+4/25/23, 10:03 - Mwaniki: Updated on the minutes.
+4/25/23, 10:03 - Mwaniki: Noted.
+4/25/23, 12:19 - George Mutall: 206.189.207.206/chama_2/v/code/
+4/26/23, 14:30 - George Mutall: 206.189.207.206/chama2/v/code/view_contribution.php
+4/27/23, 07:22 - Mr. Muraya: Shallons minutes of yesterday are very well done. Revise them as follows:-
+4/27/23, 07:22 - Mr. Muraya: 1.5 indicate precisely who is to present
+4/27/23, 07:24 - Mr. Muraya: 4.1 what is the quality of ranix data
+4/27/23, 07:24 - Mr. Muraya: 4.4 how could it be improved
+4/27/23, 07:25 - Mr. Muraya: Sorry 4.3 not 4.4
+4/27/23, 07:26 - Mr. Muraya: 4.3 Improve carpark wifi access by oritech
+4/27/23, 07:28 - Mr. Muraya: What was the contribution from all the other members...there is no record
+4/27/23, 07:40 - Mr. Muraya: Kibe or muli is presenting today. Muli's minutes look updated, Kibe's don't ..….please update
+4/27/23, 07:55 - Mr. Muraya: Peter, all this communication I'm doing....I would like to do it through our chat platform. What does it take to enable this? Direct without a history does not seem to work
+4/27/23, 07:58 - Mr. Muraya: Thanks George. The link works. That helps us to define 2 media queries, 1, for phone in portrait mode, 2 landscape mode.  Can you get started as and minute this task for us to follow-up?
+4/27/23, 08:06 - Mr. Muraya: Muli, your last minutes do not match your portfolio. Can you minute the co-workingspace/cybercafe linkage idea
+4/27/23, 08:09 - Mr. Muraya: Shallon, add 2 columns, Viz., View and Edit to the minutes table. I will explain what they are for.
+4/27/23, 08:11 - Mr. Muraya: Shallon, add Presentations to the timetable menu
+4/27/23, 08:25 - Peter Mutall: The next problem is in notifications.
+4/27/23, 08:53 - George Mutall: yes
+4/28/23, 07:13 - Mr. Muraya: Kibe, some notes from your dstabase
+4/28/23, 07:13 - Mr. Muraya: Name
+4/28/23, 07:13 - Mr. Muraya: Change name to mutall_mashamba
+4/28/23, 07:15 - Mr. Muraya: Do not use - in your names. Use _ instead. There is a ton of differences
+4/28/23, 07:16 - Mr. Muraya: Your tables for not have primary keys
+4/28/23, 07:18 - Mr. Muraya: There are no relationships between your tables
+4/28/23, 07:19 - Mr. Muraya: No unique I'd indexes are defined for your tables
+4/28/23, 07:21 - Mr. Muraya: Data types for your column tables do not match those in your spreadsheet
+4/28/23, 07:24 - Mr. Muraya: Ask kang'ara how to structure  the database
+4/28/23, 07:25 - Mr. Muraya: Ask mwaniki how to map the database to your spreadsheet data
+4/28/23, 07:52 - Mr. Muraya: George, please develop a function in php to extract name, mpesa code, amount and date from the following message
+4/28/23, 07:52 - Mr. Muraya: Dear PETER KARIUKI MURAYA, Your transaction of Kshs. 500.00 has successfully been deposited to Equity Account in favor of ANTONY PETERSTEPHEN KARANJA Ref. Number RDS87OM1XG on 28-04-2023 at 07:48:47. Thank you.
+4/28/23, 07:53 - Mr. Muraya: Hint: use regular expressions. Get help from Shallon.
+4/28/23, 08:04 - Mr. Muraya: George, there is an app by Stanbic bank that is targeting chama. It's called 'chama app' or something like that. You see, you are not the only one thinking chamas. You have competition. Download it from appetite and see what your competitors are up to.
+4/28/23, 13:49 - Mr. Muraya: 1. Your portfolio follows this pattern. Fine tune it and we shall ask Shallon to standardize all the others
+
+$No $Item_id: $one_line_header
+Problem:$one_line_header
+         $collapsible_multi_detail
+Objective:$header
+         $collapsible multi_detail
+ $techologies_list_as_icons
+Find out more:$hyperlink
+
+2. Your last Minutes: styling not good on phone
+
+3. portfolio items for which there are no minutes from previous presentations should be ommited. E.g. Image processing
+
+4. Accounting: Present the QuickBooks initiative jointly with Julius next time
+
+5. Deploy Chat via mutall_chama app and the Timetable menu
+
+6. Notification should quietly update the application messages panel as soon as a message is sent. All old chats are visible in the same panel. 
+
+7. Payment: still waiting for bank response after 2 failed attempts
+8. Bring back indirect payments that come by way of Moses messages. Show George the value of regular expressions
+
+9. Documentation (and other displays via markdown parser: limit left margin on wide screens, otherwise sentences become too long to read
+
+10. Deploy all documentations via Timetsbke menu. Work with caro+Sallon to achieve this
+
+12. The next documentation challenge: is allow further contribution by users via a Monaco- based editor
+4/28/23, 13:52 - Mr. Muraya: Notes from Peter's presentation
+4/28/23, 20:42 - James: <Media omitted>
+5/2/23, 09:29 - Mwaniki: Good morning I will be late today.
+5/2/23, 14:50 - Mr. Muraya: <Media omitted>
+5/2/23, 14:52 - Mr. Muraya: Our office electricity is way too high. I would like to tame it. Peter, can we start by you doing me a query that retrieves all Kenya power bills that are not paid by a client, plus the rooms they are connected to.
+5/2/23, 14:54 - Mr. Muraya: Shallon, please add Chris kinyanjui and Lawrence onyango yo our whatsup group.
+5/3/23, 09:41 - George Mutall: Morning,ill come in late
+5/3/23, 09:42 - Mwaniki: Good morning i will not manage to come this morning. I have emergency family matter am sorting.
+5/4/23, 08:37 - James: Good morning, I will not make it to the office today
+5/4/23, 09:33 - Mr. Muraya: Hello Mr. Muraya...
+It's Joan Nduta
+I was hoping you'd help me out.
+
+I need a recommendation letter from you. 
+
+If you could type it for me and just email it or maybe i can pick it up from the office tomorrow, whichever is convenient for you. I need it by tomorrow .
+5/4/23, 09:35 - Mr. Muraya: Request from Joan Nduta, our former intern. Peter can you handle this?
+5/4/23, 09:40 - Peter Mutall: Yes
+5/4/23, 11:01 - sharon added Chris
+5/5/23, 07:52 - Mr. Muraya: <Media omitted>
+5/5/23, 08:59 - sharon: Good Morning, I’ll come in late
+5/8/23, 13:51 - Mr. Muraya: <Media omitted>
+5/9/23, 09:22 - Mwaniki: I will be late
+5/9/23, 09:48 - James: Good Morning, I will come in late
+5/10/23, 08:12 - Mwaniki: <Media omitted>
+5/10/23, 12:07 - Mr. Muraya: Put Tracker/chat on time table
+
+Put Carols documentation on timetable...md
+
+Let Portfolio is part of shallonhub accessible from to imetable. Own minutes too should be accessible from hub
+
+
+Use markdown for portfolio+ translation/parsedowning to Html using detail+ summary html elements
+
+Robusticise Copying of minutes to avoid unintended overwriting
+
+Put metavisuo on timetable
+
+On ranix...
+
+4.2. Show that Elias is following good data capturing practice
+4.2.1 Show that yesterday's data follows (or not) stock/flow/stock pattern
+4.2.2 Show that past data largely follows (or not) the same pattern
+5/10/23, 12:08 - Mr. Muraya: My notes from shallons presentation. I could not edit the o to oriiginal. Permission denied
+5/11/23, 09:38 - Carol Mutall: Morning team will come in late
+5/12/23, 07:48 - Mr. Muraya: Good morning. I won't be on office today
+5/12/23, 09:36 - Mwaniki: Hello...I will be late today.
+5/12/23, 12:28 - +254 735 999400: We are looking for PHP Developer(Laravel, CodeIgniter, raw script), Flutter Developer able to work with native Java as well, Node js
+
+Apply from the below link
+
+https://forms.gle/A8qGTF2psJgySK3u8
+5/15/23, 09:29 - Mwaniki: Good morning I will not make to come for presentation.
+5/17/23, 14:41 - sharon added Muli
+5/17/23, 14:52 - Muli: <Media omitted>
+5/17/23, 14:53 - Muli: <Media omitted>
+5/18/23, 08:28 - Peter Mutall: Good Morning, I will come in late
+5/22/23, 18:35 - +254 735 999400: https://youtu.be/A4_TFHzqAAg
+5/23/23, 07:43 - Mr. Muraya: I will be late
+5/24/23, 13:04 - +254 787 697771: https://discord.gg/xBacXBDK
+5/24/23, 13:51 - +254 700 616063: Mutall Discord Channel
+5/26/23, 08:14 - George Mutall: Good morning...i'll come in late today.
+5/26/23, 08:34 - sharon: Good morning, I will not make it to the office today
+5/26/23, 08:44 - Peter Mutall: Hello @254733903289 , Mwaniki will be presenting today
+5/29/23, 07:53 - sharon added Chris
+5/29/23, 08:13 - Chris: Good morning all
+5/29/23, 08:13 - Chris: I will not be in today
+5/29/23, 08:26 - Peter Mutall: Good Morning, I will come in late
+5/29/23, 09:00 - Mwaniki: Morning. Will be late
+5/30/23, 07:05 - Kang'ara: Good morning, I will not make it to the office today
+5/30/23, 08:53 - Mwaniki: Morning. Will be late
+5/30/23, 09:07 - Peter Mutall: Good Morning , I will come in late
+5/31/23, 06:22 - Carol Mutall: Morning I will be late my  apologies
+5/31/23, 08:24 - Kang'ara: Good morning, I will come in late
+6/2/23, 08:28 - Carol Mutall: I will not make it to the office today
+6/2/23, 08:57 - James: Apologies, I will not make it to the office today
+6/2/23, 09:02 - sharon: Good morning, I will come in late
+6/3/23, 19:28 - +254 716 276879: Hello @254733903289 there is a lady who is interested in learning to code, so i told her about the mentorship programme. She already has a laptop and ive explained the terms to her.
+Ready to meet you on Monday. This is a heads up message so you may be receiving a call from her.
+6/3/23, 21:49 - Mr. Muraya: Thats fine
+6/6/23, 06:52 - George Mutall: Good morning, I will come in late
+6/6/23, 11:52 - Mr. Muraya: I have texted her to see visit me for further talk
+6/8/23, 07:46 - Mr. Muraya: I won't be in office today
+
+Please add the new interns to this group.
+
+Can someone pass this request to to Omodi....
+
+Design a basic login/sign in webpage using html as the starting point of the user registration process.
+Use the dialog element if you can.
+6/9/23, 08:27 - Peter Mutall: Good Morning, I will come in late
+6/9/23, 17:33 - Hallelujah added +254 782 774841
+6/9/23, 18:00 - +254 782 774841: http://206.189.207.206/registration/v/code/log_in.html
+6/9/23, 18:01 - +254 782 774841: Link to the registration system's log in page
+6/12/23, 12:28 - Chris: EYJC205001104019A08401
+6/12/23, 14:31 - Mr. Muraya: Hi kang'ara and chris, we used to have a webpage for friends of Ngong hills conservancy group on mutall co.  Is it still there? Have all the images been transferred to imagery?
+6/12/23, 22:06 - +254 708 255856 changed to +254 780 991375
+6/13/23, 18:46 - Mr. Muraya: Hi peter, did the posting work?
+6/13/23, 19:10 - Peter Mutall: There was an error, I am currently debugging it
+6/15/23, 07:39 - Mr. Muraya: Good morning Data Managers, I won't be in office today.
+6/15/23, 07:47 - Mr. Muraya: Sorry, peter I did not get time to look at the code. I'm travelling. It looks like this part of the code is still in php 7.4 and therefore  has never been debugged in 8.1. Try this: The ::: poster() function has a postage parameter in it's definition. Give it a default value of true. E.g., 
+function poster( bool $postage=true)
+6/15/23, 08:00 - Mr. Muraya: If this default value gives unexpected results, try the opposite, =false. Feed me back.
+6/15/23, 08:16 - Mr. Muraya: In addition...help Anne to develop her portfolio. Here are some ideas:
+1. Python
+Objective:Raise proficiency in using python+ advanced libraries among ourselves, championed by Anne
+Problem: Is establishing a paid parking service feasible or not?
+Plan: Use the carpark data and a python library to do some basic statistics that summaries the collected data
+Outcome:An incite into our carpark usage and potential as a cash generator
+Monitoring&Evaluation: Fortnightly report on progress, through our morning plenary sessions
+6/15/23, 08:18 - +254 787 697771: Morning to you too 
+I faced problems creating the relationship between a portfolio and a portfolio item due to the existing records in the portfolio_items table.
+6/15/23, 08:19 - Mr. Muraya: 2. Suggest another more manual hands on piece of assignment that allow Anne to explore our tools and methods
+6/15/23, 08:19 - Mr. Muraya: This assignment must be beneficial to our group
+6/15/23, 08:31 - Peter Mutall: Okay, Will do...
+6/15/23, 08:31 - Peter Mutall: Okay, I will do this too
+6/15/23, 10:11 - Mr. Muraya: Make a copy of the database. Empty the original by Truncating. Establish the relationships. Transfer data from the copy to the original
+6/15/23, 14:08 - Peter Mutall: I think the problem was at the fix, I ran into another error that I did not understand its origin, so I re-Downloaded the library to the version of the server, and *Since* the naming format was okay for the electricity display query, it successfully posted the data. 
+
+
+Running the display for the next month's data, the opening balance is reflecting the previous month's closing balance, with all the wreading, payment, debit, Electricity,and Credit all reset to *0*
+
+
+To confirm that everything is okay, in the database, I confirmed that the payments, debit, and credit have an Invoice PK associated with them.
+6/15/23, 14:09 - Peter Mutall: From this, I will load the water data and then proceed to upload the database to the server
+6/15/23, 14:34 - Mr. Muraya: In short... you solved both the electricity sharing and posting problems?
+6/15/23, 14:35 - Peter Mutall: Yeah
+6/15/23, 14:35 - Mr. Muraya: Thanks.
+6/15/23, 16:50 - Peter Mutall added +254 790 274699

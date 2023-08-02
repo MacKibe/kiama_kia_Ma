@@ -210,6 +210,7 @@ h2:not(.title) {
 
 .contacts span {
   font-size: 120%;
+  text-align: center;
   margin: 2%;
   padding: 1%;
 }
@@ -241,17 +242,15 @@ h2:not(.title) {
 }
 
 .imgcontainer img {
-  width: 100%;
-  height: 20vh;
-  margin: 10% 15% 0;
+  width: 50%;
+  aspect-ratio: 1/1;
+  border: 2px solid #332465;
 }
 
 footer {
+  background-color: #d8ffbd;
   font-size: 70%;
-  bottom: 0;
-  padding: 4% 10%;
-  background-color: rgba(176, 113, 71, 0.623);
-  margin-top: 5%;
+  padding: 5%;
 }
 
 @media (max-width: 768px) {
@@ -264,7 +263,20 @@ footer {
     width: 90%;
   }
 
+  aside {
+    display: none;
+  }
+
   nav {
     display: none;
+  }
+
+  .imgcontainer {
+    display: block;
+    margin-top: 5%;
+  }
+
+  .imgcontainer img {
+    width: 50%;
   }
 }
