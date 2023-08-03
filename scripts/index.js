@@ -1,10 +1,10 @@
 
-Assigning my html elements variables
+// Assigning my html elements variables
 const primaryNav = document.querySelector(".primary-nav");
 const navToggle = document.querySelector(".mobile-nav-toggle");
 
 
-Adding event listener to the button whent the user taps the button.
+// Adding event listener to the button whent the user taps the button.
 navToggle.addEventListener("click", () => {
     const visibility = primaryNav.getAttribute('data-visible');
 
@@ -25,22 +25,6 @@ function nextSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
     slides[currentSlide].classList.add('active');
 }
-
-// CReating a photo slideshow
-// var slideIndex = 0;
-//     showSlides();
-
-//     function showSlides() {
-//     var i;
-//     var slides = document.getElementsByClassName("graduationPics");
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none"; 
-//     }
-//     slideIndex++;
-//     if (slideIndex > slides.length) {slideIndex = 1} 
-//     slides[slideIndex-1].style.display = "block"; 
-//     setTimeout(showSlides, 2000); // Change image every 2 seconds
-// }
 
 window.onload = function(){
   //

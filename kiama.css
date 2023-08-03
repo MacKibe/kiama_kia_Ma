@@ -25,7 +25,7 @@ header {
   justify-content: space-between;
   top: 0;
   position: fixed;
-  padding: 0.7% 0.5%;
+  padding: 3% 2%;
   background-color: #e0f2f1;
 }
 
@@ -251,11 +251,49 @@ footer {
   background-color: #d8ffbd;
   font-size: 70%;
   padding: 5%;
+  display: flex;
+  align-items: center;
+}
+
+footer form {
+  background-color: #e0f2f1;
+  margin: 2% auto;
+  padding: 2% 4%;
+  width: 30%;
+}
+
+footer form > * {
+  display: block;
+  width: 100%;
+  margin-top: 3%;
+}
+
+footer form button {
+  width: 50%;
+  margin-top: 5%;
 }
 
 @media (max-width: 768px) {
   body {
-    font-size: 200%;
+    font-size: 150%;
+  }
+
+  header img {
+    width: 50%;
+  }
+
+  .title {
+    height: 15vh;
+    margin-top: 20%;
+    border-bottom: 8px solid rgb(189, 123, 24);
+  }
+
+  .title h2 {
+    padding: 9% 12% 0%;
+    font-size: 85%;
+    color: white;
+    letter-spacing: 0.6rem;
+    word-spacing: 0.4rem;
   }
 
   main {
@@ -270,6 +308,19 @@ footer {
   nav {
     display: none;
   }
+  .events img {
+    margin-top: 5%;
+  }
+
+  .location > iframe,
+  .iruaimg > iframe {
+    height: 25vh;
+  }
+
+  .events img,
+  .photocontainer img {
+    width: 100%;
+  }
 
   .imgcontainer {
     display: block;
@@ -277,6 +328,14 @@ footer {
   }
 
   .imgcontainer img {
-    width: 50%;
+    width: 80%;
+  }
+
+  footer {
+    display: block;
+  }
+
+  footer form {
+    width: 100%;
   }
 }
