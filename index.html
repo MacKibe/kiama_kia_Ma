@@ -6,115 +6,59 @@
               name="viewport" />
         <link href="css/styles.css" media="screen" rel="stylesheet" 
               type="text/css"/>
-        <script src="scripts/index.js" defer></script>
+        <!-- <script src="scripts/index.js" defer></script> -->
         <script>
             //When the page loads, an Intersection Observer ensures that a video
             //is played when it is in out view port; otherwise it is paused.
             //
             //Note: The video has to be muted before you can control its playing and 
             //pausing programmatically!
-            window.onload = function(){
-                //
-                //Collect the 2 key parameters of an intersection observer object
-                //
-                //1. The callback function to call whenever we scroll
-                const callback = (entries, observer)=>{
-                    //
-                    //For each observed entry-----
-                    for(const entry of entries){
-                        //
-                        //----get the target element (as a video)
-                        const video =entry.target;
-                        //
-                        //----if the video ntersets with the view port....
-                        if (entry.isIntersecting) {
-                            //
-                            //...play the video
-                            video.play();
-                            video.muted = false;
-                        }
-                        //
-                        //...otherwise
-                        else {
-                            //
-                            //Pause the video
-                            video.pause();
-                        };
-                    }
-                };
-                //
-                //2. The options for controlling the intersection.
-                //In our case the options are:-
-                //- There is intersection if at least half of the video is visible
-                const options = {threshold:1};
-                //
-                //Create a new intersection observer object
-                const observer = new IntersectionObserver(callback, options);
-
-                //Collect all the videos on this page, as an array
-                const videos = Array.from(document.querySelectorAll('video'));
-                //
-                //For each video...
-                for(const video of videos){
-                    //
-                    //...mute the video (otherwise it won't play!)
-                    video.muted = false;
-                    //
-                    //...put the video in the list of observed entries
-                    observer.observe(video);
-                }
-            };
-
-            window.onload = function(){
-            //
-            //Collect the 2 key parameters of an intersection observer object
-            //
-            //1. The callback function to call whenever we scroll
-            const callback = (entries, observer)=>{
-                //
-                //For each observed entry-----
-                for(const entry of entries){
-                    //
-                    //----get the target element (as an audio)
-                    const audio =entry.target;
-                    //
-                    //----if the audio ntersets with the view port....
-                    if (entry.isIntersecting) {
-                        //
-                        //...play the audio
-                        audio.play();
-                    }
-                    //
-                    //...otherwise
-                    else {
-                        //
-                        //Pause the audio
-                        audio.pause();
-                    };
-                }
-            };
-            //
-            //2. The options for controlling the intersection.
-            //In our case the options are:-
-            //- There is intersection if at least half of the audio is visible
-            const options = {threshold:1};
-            //
-            //Create a new intersection observer object
-            const observer = new IntersectionObserver(callback, options);
-
-            //Collect all the audio on this page, as an array
-            const audios = Array.from(document.querySelectorAll('audio'));
-            //
-            //For each audio...
-            for(const audio of audios){
-                //
-                //...mute the audio (otherwise it won't play!)
-                audio.muted = false;
-                //
-                //...put the audio in the list of observed entries
-                observer.observe(audio);
+            window.onload = function () {
+    // Intersection Observer for videos
+    const videoCallback = (entries, observer) => {
+        for (const entry of entries) {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+                video.play();
+                video.muted = true;
+            } else {
+                video.pause();
             }
-        };
+        }
+    };
+
+    const videoOptions = { threshold: 1 };
+    const videoObserver = new IntersectionObserver(videoCallback, videoOptions);
+
+    const videos = Array.from(document.getElementsByTagName('video'));
+
+    for (const video of videos) {
+        video.muted = false;
+        videoObserver.observe(video);
+    }
+
+    // Intersection Observer for audio
+    const audioCallback = (entries, observer) => {
+        for (const entry of entries) {
+            const audio = entry.target;
+            if (entry.isIntersecting) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    };
+
+    const audioOptions = { threshold: 1 };
+    const audioObserver = new IntersectionObserver(audioCallback, audioOptions);
+
+    const audios = Array.from(document.getElementsByTagName('audio'));
+
+    for (const audio of audios) {
+        audio.muted = false;
+        audioObserver.observe(audio);
+    }
+};
     </script>
     </head>
     <body>
@@ -208,7 +152,8 @@
             
             
             <div class="irua">
-                <!-- The irua section containing an embedded youtube video -->
+                <!-- The irua
+                     section containing an embedded youtube video -->
                 <h2>Irua Ni Igongona Riria Inene Ria Mucii</h2>
                 <iframe id="video-iframe" src="https://www.youtube.com/embed/L44xc8WNpPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -249,6 +194,7 @@
             
             <div class="gallery" id="gallery">
                 <h2>Gallery</h2>
+                <video src="./video/inooro_radio.mp4" controls></video>
                 <div class="photocontainer">
                     <img class="graduationPics" src="./images/g1.jpg" alt="">
                     <img class="graduationPics" src="./images/g2.jpg" alt="">
