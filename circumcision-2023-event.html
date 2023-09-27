@@ -239,12 +239,14 @@
                 <span>hee rúhía rúmwe, njigue wega. Tumíra numba íno. <b>0701069382</b></span><br>
                 <span><a href="https://www.linkedin.com/in/ndichu-james-kiberenge-3a7504140/">Lets Connect</a></span>
             </div>
-            <form>
+            <form id="feedback_form" action="save_feedback.php" method="post">
                 <h3>Share some feedback on what you would like to see in the next Irua event.</h3>
-                <label for="user">Name:</label>
-                <input type="text">
+                <label for="user" required>Name:</label>
+                <input id="user" name="user" type="text" maxlength="100">
+
                 <label for="feedback">Feedback:</label>
-                <textarea name="user" id="" cols="30" rows="10"></textarea>
+                <textarea id="user" name="feedback" cols="20" rows="10"></textarea>
+                
                 <button>Share</button>
             </form>
         </footer>
